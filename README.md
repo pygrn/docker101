@@ -20,8 +20,8 @@ $ jupyter notebook Docker101.ipynb
 
 To see the slides inside the notebook, just activate RISE extension
 ```
-$ jupyter nbextension enable--sys-prefix
-$ jupyter nbextension enable rise --py --sys-prefix
+$ jupyter-nbextension install rise --py --sys-prefix
+$ jupyter-nbextension enable rise --py --sys-prefix
 ```
 , and press "Alt + R"
 
