@@ -1,6 +1,8 @@
 # Docker 101
 
-## How to use it?
+[HTML Slides](http://htmlpreview.github.io/?https://github.com/pygrn/docker101/blob/master/Docker101.slides.html)
+
+## How to use view it?
 
 Just open the slides in your preferred format:
 - [HTML](Docker101.slides.html) *//recommended*
