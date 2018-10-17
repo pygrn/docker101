@@ -1,0 +1,7 @@
+.rise-enabled {
+    background-color: black !important;
+}
+
+.slides > div.text_cell_render {
+    color: white !important;
+}
