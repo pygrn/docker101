@@ -16,6 +16,12 @@ $ jupyter notebook Docker101.ipynb
 , and a new browser pointing to the notebook will be raised
 
 
+### Render slides in html format
+
+```
+$ jupyter nbconvert --to slides Docker101.ipynb --post serve
+```
+
 ### Slides mode inside the notebook
 
 To see the slides inside the notebook, just activate RISE extension
