@@ -2,6 +2,13 @@
 
 ## How to use it?
 
+Just open the slides in your preferred format:
+- [HTML](Docker101.slides.html) *//recommended*
+- [PDF](Docker101.slides.pdf)
+
+
+## How to play with it?
+
 1) Install requirements
 
 ```
