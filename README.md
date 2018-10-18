@@ -1,6 +1,15 @@
 # Docker 101
 
-## How to use it?
+[HTML Slides](http://htmlpreview.github.io/?https://github.com/pygrn/docker101/blob/master/Docker101.slides.html)
+
+## How to use view it?
+
+Just open the slides in your preferred format:
+- [HTML](Docker101.slides.html) *//recommended*
+- [PDF](Docker101.slides.pdf)
+
+
+## How to play with it?
 
 1) Install requirements
 
@@ -15,6 +24,12 @@ $ jupyter notebook Docker101.ipynb
 ```
 , and a new browser pointing to the notebook will be raised
 
+
+### Render slides in html format
+
+```
+$ jupyter nbconvert --to slides Docker101.ipynb --post serve
+```
 
 ### Slides mode inside the notebook
 
