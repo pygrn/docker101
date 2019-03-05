@@ -13456,7 +13456,30 @@ a.anchor-link {
 
 </div>
 </div>
-</div></div></section></section><section><section>
+</div></div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Cheat-sheet">Cheat sheet<a class="anchor-link" href="#Cheat-sheet">&#182;</a></h2><h4 id="Start-composition-running-containers-in-background">Start composition running containers in background<a class="anchor-link" href="#Start-composition-running-containers-in-background">&#182;</a></h4><p><code>$ docker-compose up -d</code></p>
+<h4 id="Stop-composition">Stop composition<a class="anchor-link" href="#Stop-composition">&#182;</a></h4><p><code>$ docker-compose down</code></p>
+<h4 id="Build-composition">Build composition<a class="anchor-link" href="#Build-composition">&#182;</a></h4><p><code>$ docker-compose build [$service]</code></p>
+<p><code>$ docker-compose start [$service]</code></p>
+<p><code>$ docker-compose stop [$service]</code></p>
+
+</div>
+</div>
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="Review-logs">Review logs<a class="anchor-link" href="#Review-logs">&#182;</a></h4><p><code>$ docker-compose logs -f [$service]</code></p>
+<h4 id="Rescale-service">Rescale service<a class="anchor-link" href="#Rescale-service">&#182;</a></h4><p><code>$ docker-compose scale $service=4</code></p>
+<h4 id="Stream-container-events">Stream container events<a class="anchor-link" href="#Stream-container-events">&#182;</a></h4><p><code>$ docker-compose events --json</code></p>
+<h4 id="Drop-an-interactive-shell">Drop an interactive shell<a class="anchor-link" href="#Drop-an-interactive-shell">&#182;</a></h4><p><code>$ docker-compose -it exec $service bash</code></p>
+
+</div>
+</div>
+</div></section></section><section><section>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -13665,11 +13688,10 @@ $</code></pre>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-
-<pre><code>yml
-  api:
-    ...
-    command: ["python", "manage.py", "runserver"]</code></pre>
+<div class="highlight"><pre><span></span><span class="nt">api</span><span class="p">:</span>
+    <span class="l l-Scalar l-Scalar-Plain">...</span>
+    <span class="l l-Scalar l-Scalar-Plain">command</span><span class="p p-Indicator">:</span> <span class="p p-Indicator">[</span><span class="s">&quot;python&quot;</span><span class="p p-Indicator">,</span> <span class="s">&quot;manage.py&quot;</span><span class="p p-Indicator">,</span> <span class="s">&quot;runserver&quot;</span><span class="p p-Indicator">]</span>
+</pre></div>
 <p>, this tells that <code>$ python manage.py runserver</code> should be runned once the container is ready!</p>
 
 </div>
@@ -14010,7 +14032,7 @@ python manage.py runserver <span class="m">0</span>.0.0.0:8000
 
 </div>
 </div>
-</div></div><div class="fragment">
+</div></div></section><section>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -14028,7 +14050,7 @@ python manage.py runserver <span class="m">0</span>.0.0.0:8000
 
 </div>
 </div>
-</div></div><div class="fragment">
+</div><div class="fragment">
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -14140,6 +14162,7 @@ python manage.py runserver <span class="m">0</span>.0.0.0:8000
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="It's-all!">It's all!<a class="anchor-link" href="#It's-all!">&#182;</a></h1><p><img src="pictures/thanks.gif" alt="Thanks!" title="Thanks"></p>
+<p>For more information <a href="https://docs.docker.com/compose/">https://docs.docker.com/compose/</a></p>
 
 </div>
 </div>
