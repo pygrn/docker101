@@ -1,0 +1,3 @@
+[submodule "workshop/todos_django"]
+	path = workshop/todos_django
+	url = git@github.com:pygrn/todos_django.git
