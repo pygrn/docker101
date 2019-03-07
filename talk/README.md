@@ -1,6 +1,6 @@
 # Docker 101
 
-[HTML Slides](http://htmlpreview.github.io/?https://github.com/pygrn/docker101/blob/master/Docker101.slides.html)
+[HTML Slides](http://htmlpreview.github.io/?https://github.com/pygrn/docker101/blob/master/talk/Docker101.slides.html)
 
 ## How to use view it?
 
