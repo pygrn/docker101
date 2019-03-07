@@ -37,7 +37,7 @@ if( window.location.search.match( /print-pdf/gi ) ) {
 
 <!-- Loading the mathjax macro -->
 <!-- Load mathjax -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_HTML"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS_HTML"></script>
     <!-- MathJax configuration -->
     <script type="text/x-mathjax-config">
     MathJax.Hub.Config({
@@ -13239,6 +13239,19 @@ a.anchor-link {
 <div class="reveal">
 <div class="slides">
 <section><section>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span> 
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div></section></section><section><section>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -13382,7 +13395,7 @@ a.anchor-link {
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <ul>
-<li>Rapid deployment</li>
+<li>Fast deployment</li>
 </ul>
 
 </div>
@@ -13477,8 +13490,8 @@ a.anchor-link {
 <div class="text_cell_render border-box-sizing rendered_html">
 
 <pre><code>FROM alpine:latest
-COPY . /app
-RUN make /app
+ADD . /app
+RUN make app
 CMD python /app/app.py</code></pre>
 
 </div>
@@ -13723,7 +13736,7 @@ a22ce5c1986b        docker_erp                      "/entrypoint.sh open…"   2
 <ul>
 <li><strong>Expose</strong> ports with<ul>
 <li><code>- p $HOST_PORT:$CONTAINER_PORT</code> at run time<ul>
-<li>i.e <code>-p 8080:8081</code> to expose the 8080 container port to 8081's host</li>
+<li>i.e <code>-p 8081:8080</code> to expose the 8080 container port to 8081's host</li>
 </ul>
 </li>
 <li>use the <code>EXPOSE $PORT</code> command in your <code>Dockerfile</code></li>
@@ -13739,10 +13752,7 @@ a22ce5c1986b        docker_erp                      "/entrypoint.sh open…"   2
 <div class="text_cell_render border-box-sizing rendered_html">
 <ul>
 <li><strong>Mount</strong> paths<ul>
-<li><code>- v $HOST_PATH:$CONTAINER_PATH</code> at run time<ul>
-<li>i.e <code>-p 8080:8081</code> to expose the 8080 container port to 8081's host</li>
-</ul>
-</li>
+<li><code>- v $HOST_PATH:$CONTAINER_PATH</code> at run time</li>
 <li>see the difference mount vs <code>ADD</code> <code>Dockerfile</code> command</li>
 </ul>
 </li>
@@ -13777,7 +13787,7 @@ a22ce5c1986b        docker_erp                      "/entrypoint.sh open…"   2
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <ul>
-<li>run multiple containers at same time</li>
+<li>Run multiple containers at same time</li>
 </ul>
 
 </div>
@@ -13787,7 +13797,7 @@ a22ce5c1986b        docker_erp                      "/entrypoint.sh open…"   2
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <ul>
-<li>define your stack using a YAML file</li>
+<li>Define your stack using a YAML file</li>
 </ul>
 
 </div>
@@ -13818,7 +13828,7 @@ services:
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <ul>
-<li>the services can be interconnected with a network</li>
+<li>The services can be interconnected with a network</li>
 </ul>
 
 </div>
@@ -13828,7 +13838,7 @@ services:
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <ul>
-<li>configure environment variables, different enviroments -&gt; CI</li>
+<li>Configure environment variables, different enviroments -&gt; CI</li>
 </ul>
 
 </div>
@@ -13845,7 +13855,7 @@ services:
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <ul>
-<li>repository with thousands of images ready to use</li>
+<li>Repository with thousands of images ready to use</li>
 </ul>
 
 </div>
@@ -13855,7 +13865,7 @@ services:
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <ul>
-<li>pull images from <code>Docker Hub</code> with Dockerfile</li>
+<li>Pull images from <code>Docker Hub</code> with Dockerfile</li>
 </ul>
 
 </div>
@@ -13875,7 +13885,7 @@ services:
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <ul>
-<li>push your images to your repository or to <code>Docker Hub</code> with <code>docker push</code></li>
+<li>Push your images to your repository or to <code>Docker Hub</code> with <code>docker push</code></li>
 </ul>
 
 </div>
@@ -13885,7 +13895,7 @@ services:
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <ul>
-<li>add a tag in the image name</li>
+<li>Add a tag in the image name</li>
 </ul>
 
 </div>
@@ -13895,7 +13905,7 @@ services:
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <ul>
-<li>version control for your images
+<li>Version control for your images
 <pre><code>docker101:latest
 docker101:1.0.0</code></pre>
 </li>
@@ -13950,7 +13960,7 @@ docker101:1.0.0</code></pre>
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <ul>
-<li>and much more, we will explain in the next talk ;)</li>
+<li>And much more, we will explain in the next talk ;)</li>
 </ul>
 
 </div>
