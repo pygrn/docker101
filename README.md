@@ -4,6 +4,6 @@ Repo for the talk and the lab about Docker1011
 
 ## Content
 
-- [Talk](talk/README.md)
-- [Lab](workshop/README.md)
+- [Talk](talk/)
+- [Lab](workshop/)
 
