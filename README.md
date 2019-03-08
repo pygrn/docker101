@@ -1,6 +1,6 @@
 # Docker 101
 
-Repo for the talk and the lab about Docker1011
+Docker101 talk and lab files
 
 ## Content
 
