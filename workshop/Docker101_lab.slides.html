@@ -37,7 +37,7 @@ if( window.location.search.match( /print-pdf/gi ) ) {
 
 <!-- Loading the mathjax macro -->
 <!-- Load mathjax -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS_HTML"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_HTML"></script>
     <!-- MathJax configuration -->
     <script type="text/x-mathjax-config">
     MathJax.Hub.Config({
@@ -13846,7 +13846,7 @@ python manage.py runserver <span class="m">0</span>.0.0.0:8000
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<div class="highlight"><pre><span></span>$ cat todos_project/settings-production.py
+<div class="highlight"><pre><span></span>$ vi todos_project/settings-production.py
 
 <span class="nv">DATABASES</span> <span class="o">=</span> <span class="o">{</span>
     <span class="s1">&#39;default&#39;</span>: <span class="o">{</span>
@@ -13870,15 +13870,6 @@ python manage.py runserver <span class="m">0</span>.0.0.0:8000
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="Config-the-environment">Config the environment<a class="anchor-link" href="#Config-the-environment">&#182;</a></h3><div class="highlight"><pre><span></span><span class="nn">...</span>
 
-  <span class="nt">db</span><span class="p">:</span>
-    <span class="nt">environment</span><span class="p">:</span>
-      <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">POSTGRES_DB=${DB_NAME}</span>
-      <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">POSTGRES_USER=${DB_USER}</span>
-      <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">POSTGRES_PASS=${DB_PASSWORD}</span>
-      <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">ALLOW_IP_RANGE=0.0.0.0/0</span>
-
-<span class="nn">...</span>
-
   <span class="nt">api</span><span class="p">:</span>
     <span class="nt">environment</span><span class="p">:</span>
       <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">DB_HOST=${DB_HOST}</span>
@@ -13886,6 +13877,15 @@ python manage.py runserver <span class="m">0</span>.0.0.0:8000
       <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">DB_NAME=${DB_NAME}</span>
       <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">DB_USER=${DB_USER}</span>
       <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">DB_PASSWORD=${DB_PASSWORD}</span>
+
+<span class="nn">...</span>
+
+  <span class="nt">db</span><span class="p">:</span>
+    <span class="nt">environment</span><span class="p">:</span>
+      <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">POSTGRES_DB=${DB_NAME}</span>
+      <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">POSTGRES_USER=${DB_USER}</span>
+      <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">POSTGRES_PASS=${DB_PASSWORD}</span>
+      <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">ALLOW_IP_RANGE=0.0.0.0/0</span>
 </pre></div>
 
 </div>
